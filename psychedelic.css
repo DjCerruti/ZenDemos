@@ -1,0 +1,441 @@
+@charset "UTF-8";
+
+@font-face
+{
+	font-family: "Victor Moscoso";
+	src: url("victor_moscoso/VICTM___.TTF")format("truetype");
+}
+	
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 1200px;
+	min-height: 2320px;
+	background-image: url("images/peacock1.jpg");
+	background-repeat: no-repeat;
+	padding: 0;
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+
+}
+
+a:link {
+	color:steelblue;
+	font-weight: bolder;
+}
+
+a:visited {
+	color:darkorchid;
+	font-weight: bolder;
+}
+
+a:hover {
+	color: orangered;
+	font-weight: bolder;
+}
+
+a:active {
+	color: darkred;
+	font-weight: bolder;
+}
+
+a[href="http://www.mezzoblue.com/"] {
+	font-family: 'Victor Moscoso', Papyrus, 'Cooper Black', serif;
+}
+
+a[href="http://www.mezzoblue.com/"]::after {
+	content:" ";
+}
+
+header {
+	display: flex;
+	border-bottom: 16px solid #D92B04;
+	background-color: black;
+	width: 1130px;
+	background-image: -webkit-linear-gradient(180deg, #000000 64%, #60401f 100%);
+    background-image: -moz-linear-gradient(180deg,#000000 64%, #60401f 100%);
+    background-image: -o-linear-gradient(180deg, #000000 64%, #60401f 100%);
+    background-image: linear-gradient(180deg, #000000 64%, #60401f 100%);
+}
+
+.summary {
+	width: 240px;
+	margin-top: 3.5em;
+	margin-bottom: 4em;
+	padding-left: 2.5em;
+	margin-left: 1.6em;
+}
+
+.summary p:first-of-type {
+	position: relative;
+	top: 2em;
+}
+
+.summary p:nth-of-type(2) {
+	position: relative;
+	top: 2em;
+}
+
+.page-wrapper {
+	width: 94%;
+	min-height: 2270px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4em;
+	background-image: -webkit-linear-gradient(90deg, #000000 0%, #60401f 50%);
+    background-image: -moz-linear-gradient(90deg,#000000 0%, #60401f 50%);
+    background-image: -o-linear-gradient(90deg, #000000 0%, #60401f 50%);
+    background-image: linear-gradient(90deg, #000000 0%, #60401f 50%);
+
+}
+
+.page-wrapper p {
+	font-size: 1.2em;
+	font-family: palatino, georgia, serif;
+	color: #734002;	
+}
+
+.page-wrapper li, .page-wrapper a {
+	font-size: 1.15em;
+}
+
+.intro {
+	background-color: whitesmoke;
+}
+
+h1 {
+	height: 200px;
+	width: 500px;
+	background-image: url("images/psychedelic_h1.png");
+	background-repeat: no-repeat;
+	text-indent: -3000em;
+	border: 1px solid blue;
+	background-size: 80%;
+	padding-right: 5em;
+	margin-left: 1.88em;
+	background-color: whitesmoke;
+	background-position: 1em .5em;
+	border-top-right-radius: 25%;
+	border-bottom-left-radius: 25%;
+
+}
+
+h2 {
+    height: 120px;
+    width: 432px;
+	background-image: url("images/psychedelic2_h2.png");
+    background-repeat: no-repeat;
+    text-indent: -3000em;
+    background-size: contain;
+    background-color: #CED76F;
+    background-position: 164px 38px;
+    padding-top: 0em;
+	margin-left: -1em;
+    margin-top: 3.8em;
+	border-top-right-radius: 25%;
+	border-bottom-left-radius: 25%;
+	border: 5px solid #D92B04;
+	
+}
+
+.preamble h3 {
+	height: 160px;
+	width: 800px;
+	background-image: url("images/enlightenment2_h3.png");
+	background-repeat: no-repeat;
+	text-indent: -3000em;
+	background-size: contain;
+	margin-bottom: -3.5em;
+	
+}
+
+.preamble {
+	width: 700px;
+	float: right;
+	margin-top: -19em;
+	padding: 1em;
+}
+
+.intro {
+	border-bottom: 16px solid #D92B04;
+	padding-bottom: 4em;
+	
+	padding-right: 1em;
+}
+
+.intro p {
+	margin-left: .3em;
+}
+
+body .page-wrapper .main {
+	clear: both;
+	float: right;
+	background-color: whitesmoke;
+	position: relative;
+}
+
+.explanation h3 {
+	height: 160px;
+	width: 360px;
+	background-image: url("images/about2_h3.png");
+	background-repeat: no-repeat;
+	text-indent: -3000em;
+	background-size: contain;
+	margin-bottom: -4.6em;
+	margin-left: 1.2em;
+}
+
+.explanation {
+	width: 744px;
+	clear: both;
+	float: right;
+	margin-top: 1.5em;
+	margin-bottom: -1.4em;
+	padding: 0em 1em 0em 1em;
+}
+
+.explanation p {
+	padding: 0em 1em 0em 1.2em;
+}
+
+.participation h3 {
+	height: 130px;
+	width: 300px;
+	background-image: url("images/participation_h3.png");
+	background-repeat: no-repeat;
+	text-indent: -3000em;
+	background-size: contain;
+	margin-bottom: -4em;
+}
+
+.participation {
+	clear: both;
+	width: 712px;
+	float: left;
+	/*border: 2px solid black;*/
+	padding: 0em 1em 0em 1em;
+	margin-bottom: -1em;
+	margin-left: 1em;
+}
+
+.benefits {
+	clear: left;
+	width: 712px;
+	float: right;
+	/*border: 2px solid black;*/
+	margin-top: 0em;
+	padding: 0em 1em 0em 1em;
+	margin-right: 1em;
+	
+}
+
+.benefits h3 {
+	height: 130px;
+	width: 300px;
+	background-image: url("images/benefits_h3.png");
+	background-repeat: no-repeat;
+	text-indent: -3000em;
+	background-size: contain;
+	margin-bottom: -4em;
+}
+
+.requirements {
+	clear: both;
+	float: right;
+	width: 712px;
+	padding: 1em;
+	margin-top: 0em;
+	margin-right: 1em;
+	
+}
+
+.requirements h3 {
+	height: 130px;
+	width: 300px;
+	background-image: url("images/requirements_h3.png");
+	background-repeat: no-repeat;
+	text-indent: -3000em;
+	background-size: contain;
+	padding-top: .5em;
+	margin-bottom: -4.5em;
+	margin-top: 0em;
+}
+
+.requirements p {
+	padding-right: 1.5em;
+}
+
+.requirements p:last-of-type {
+	position: absolute;
+	top: 74em;
+	width: 240px;
+	left: -38%;
+	font-size: 1.15em;
+	color: whitesmoke
+}
+
+.design-selection h3 {
+	height: 180px;
+	width: 350px;
+	background-image: url("images/design2_h3.png");
+	background-repeat: no-repeat;
+	text-indent: -3000em;
+	background-size: contain;
+	background-position: 0em 5em;
+	margin-top: 0em;
+	margin-bottom: -4em;
+}
+
+.design-selection li {
+	font-size: 1em;
+	margin-left: -1em;
+}
+
+.design-selection {
+	margin-bottom: 5em;
+	padding-left: 3em;
+	margin-top: 0em;
+}
+
+.design-selection nav {
+	margin-top: 4.6em;
+}
+
+footer {
+	clear: both;
+	position: absolute;
+	top: 68em;
+	left: -32%;
+	
+}
+
+footer a {
+	display: block;
+	
+	padding-bottom: 1em;
+}
+
+.sidebar {
+    width: 350px;
+    height: 986px;
+    background-color: #CED76F;
+    background-image: -webkit-linear-gradient(0deg,rgba(206,215,111,1.00) 0%,rgba(224,227,133,1.00) 64%);
+    background-image: -moz-linear-gradient(0deg,rgba(206,215,111,1.00) 0%,rgba(224,227,133,1.00) 64%);
+    background-image: -o-linear-gradient(0deg,rgba(206,215,111,1.00) 0%,rgba(224,227,133,1.00) 64%);
+    background-image: linear-gradient(90deg,rgba(206,215,111,1.00) 0%,rgba(224,227,133,1.00) 64%);
+	border-bottom-right-radius: 25%;
+}
+
+.design-archives h3 {
+	height: 160px;
+	width: 300px;
+	background-image: url("images/archives_h3.png");
+	background-repeat: no-repeat;
+	text-indent: -3000em;
+	background-size: contain;
+	margin-bottom: -5.8em;
+	margin-left: 1em;
+}
+
+.design-archives {
+	padding-left: 1.8em;
+	margin-bottom: 5em;
+	font-size: 1em;
+}
+
+.design-archives li {
+	font-size: 1em;
+}
+
+.zen-resources {
+	padding-left: 1.8em;
+	padding-bottom: 2em;
+}
+
+.zen-resources h3 {
+	height: 160px;
+	width: 300px;
+	background-image: url("images/resources_h3.png");
+	background-repeat: no-repeat;
+	text-indent: -3000em;
+	background-size: contain;
+	margin-bottom: -5.8em;
+	margin-left: 1em;
+}
+
+.zen-resources li {
+	font-size: 1em;
+}
+
+.page-wrapper li {
+	font-size: 1.2em;
+	margin-bottom: .8em;
+}
+
+.extra1 {
+	width: 166.37px;
+	height: 100px;
+	background-image: url("images/psychedeliceye.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 13%;
+	left: 72.5%;
+	background-size: contain;
+	animation-name: opacity1;
+	animation-duration: 20s;
+	animation-delay: 0;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+
+@keyframes opacity1 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1}
+}
+
+.extra2 {
+	width: 850px;
+	height: 850px;
+	background-image: url("images/mandala.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 30%;
+	left: 33.5%;
+	opacity: .06;
+}
+
+.extra3 {
+	width: 200px;
+	height: 229.589px;
+	background-image: url("images/spectacles2.png");
+	background-size: contain;
+	position: absolute;
+	background-repeat: no-repeat;
+	top: 570px;
+	left: 12.5%;
+
+}
+
+.extra4 {
+	width: 850px;
+	height: 850px;
+	background-image: url("images/mandala.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 62%;
+	left: 33.5%;
+	opacity: .06;
+
+}

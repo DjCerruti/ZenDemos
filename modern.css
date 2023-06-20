@@ -1,0 +1,464 @@
+@charset "UTF-8";
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+    min-width: 1200px;
+	min-height: 188em;
+	font-family: Didot, Cambria, serif; 
+	background-image: url("images/skyscraper.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	
+	
+}
+
+body p, .design-selection li {
+	color:aliceblue;
+	text-shadow: .08em .08em black;
+}
+
+body a {
+	text-shadow: none;
+}
+
+a:hover {
+	color: red;
+}
+
+a:active {
+	color: darkred;
+}
+
+a:link {
+	color: darkblue;
+}
+
+
+.page-wrapper {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+header {
+	display: flex;
+	margin-bottom: 1em;
+}
+
+h1, h2, h3 {
+	font-family: Futura, 'Trebuchet MS', sans-serif;
+	font-weight: 600;
+}
+
+h1 {
+	height: 420px;
+	width: 420px;
+	background-image: url("images/zenhead2.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-indent: -3000px;
+	margin-left: -1em;
+	margin-right: 1.5em;
+	margin-top: 0.2em;
+	padding: 0;	
+	z-index: 2;
+}
+
+.extra6 {
+	width: 1920px;
+	height: 350px;
+	background-color: aliceblue;
+	position: absolute;
+	top: 1.3em;
+	left: 0em;
+	z-index: 1;
+	opacity: 1;
+}
+
+h2 {
+	
+	font-size: 2.6em;
+	width: 7.8em;
+	margin-top: 5.5em;
+	z-index: 2;
+	margin-left: .25em;
+	
+}
+
+h3 {
+	font-size: 1.2em;
+	text-shadow: none;
+	color: darkslateblue;
+}
+
+.sidebar .zen-resources h3 {
+	color: black;
+	text-shadow: none;
+	position: relative;
+}
+
+.sidebar .design-selection h3 {
+	margin-left: 1em;
+}
+
+.summary {
+	float: left;
+	width: 15em;
+	margin-left: 1em;
+	margin-top: -6.2em;
+	padding-right: 1em;
+    
+}
+
+.summary::first-line {
+	font-size: 1.4em
+}
+
+.summary p {
+	font-size: 1.2em;
+}
+
+.summary p:first-of-type {
+	color:aliceblue;
+	text-shadow: .08em .08em black;
+	opacity: 0;
+	animation-name: opacity01a;
+    animation-duration: 5s;
+    animation-delay: .8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
+}
+@keyframes opacity01a {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.summary p:nth-of-type(2n) {
+	color:aliceblue;
+	text-shadow: .08em .08em black;
+	opacity: 0;
+	animation-name: opacity01b;
+	animation-duration: 5s;
+	animation-delay: 5.6s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+
+@keyframes opacity01b {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+	
+
+.preamble {
+	
+	float: right;
+	width: 70%;
+	margin-top: -5.8em;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	padding-top: 1em;
+	background-color: rgb(72, 61, 139, .15);
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+}
+
+
+.preamble p:first-of-type::first-letter {
+	float: left;
+    font-size: 300%;
+    margin-top: -12px;
+    margin-right: 5px;
+    color: darkslateblue;
+}
+
+
+.main {
+	clear: both;
+}
+
+.design-selection {
+	position: absolute;
+	top: 622px;
+	left: 72px;
+	border-top: 10px ridge #01A99D;
+	border-bottom: 10px ridge #01A99D;
+	width: 284px;
+	padding: .2em .2em;
+	margin-top: .5em;
+}
+
+
+.design-selection li {
+	margin-bottom: 1em;
+	font-size: 1em;
+}
+
+
+.design-selection {
+	float: left;
+}
+
+.design-archives {
+	width: 45%;
+	clear: left;
+	float: left;
+}
+
+.zen-resources {
+	float: right;
+	width: 45%
+}
+
+.explanation {
+	margin-top: -1em;
+	float: right;
+	width: 70%;
+	font-size: 1.2em;
+	background-color: rgb(72, 61, 139, .075);
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	
+}
+
+.participation {
+	margin-top: 0em;
+	clear: both;
+	float: left;
+	width: 50%;
+	font-size: 1.2em;
+	background-color: rgb(72, 61, 139, .15);
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+.benefits {
+	clear: both;
+	width: 50%;
+	float: right;
+	font-size: 1.2em;
+	background-color: rgb(72, 61, 139, .075);
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	
+}
+
+.requirements {
+	clear: both;
+	float: left;
+	font-size: 1.2em;
+	width: 70%;
+	margin-bottom: 0em;background-color: rgb(72, 61, 139, .15);
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+footer {
+	clear: left;
+	width: 20px;
+	float: right;
+	margin-top: -29.5em;
+	margin-right: 5em;
+	padding-right: 8.8em;
+	border-top: 10px ridge #01A99D;
+	border-bottom: 10px ridge #01A99D;
+}
+
+footer a {
+	display: block;
+	font-size: 1.4em;
+	font-family: Futura, 'Trebuchet MS', sans-serif;
+	margin: 2em 2em;
+}
+
+aside.sidebar {
+	clear: both;
+	font-size: 1.2em;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 0em;
+	margin-bottom: 10em;
+    width: 100%;
+	height: 253.6px;
+	background-color:aliceblue;
+	/*border-top: 10px ridge #01A99D;
+	border-bottom: 10px ridge #01A99D;*/
+	opacity: 1;
+	
+}
+
+
+
+.design-archives {
+	float: left;
+	width: 20%;
+	margin-left: 25%;
+	padding-top: 1em;	
+}
+
+.design-archives h3 {
+	color: black;
+	text-shadow: none;
+}
+
+.zen-resources {
+	float: left;
+	width: 20%;
+	margin-left: 10%;
+	padding-top: 1em;	
+}
+
+
+.extra1 {
+	width: 100px;
+	height: 25px;
+	background-color:aliceblue;
+	border: 3px solid darkslateblue;
+	transform: skewX(45deg);
+	border-top-right-radius: 100%;
+	margin-left: 0%;
+	/*position: absolute;
+	top: 1180px;*/
+	animation-name: speedingbullet;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	margin-top: -8em;
+}
+
+.extra2 {
+	width: 60px;
+	height: 15px;
+	background-color:aliceblue;
+	border: 1.5px solid darkslateblue;
+	transform: skewX(45deg);
+	border-top-right-radius: 100%;
+	margin-left: 0%;
+	margin-top: -.75em;
+	/*position: absolute;
+	top: 1200px;*/
+	animation-name: speedingbullet;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+
+  @keyframes speedingbullet {
+	0% { margin-left: 0%; }
+	100% { margin-left: 100%; }
+}
+
+.extra3 {
+	width: 100px;
+	height: 25px;
+	background-color:aliceblue;
+	border: 3px solid darkslateblue;
+	transform: skewX(-45deg);
+	border-top-left-radius: 1000%;
+	margin-left: 1920px;
+	margin-top: .5em;
+	/*position: absolute;
+	top: 1380px;*/
+	animation-name: speedingbullet2;
+	animation-duration: 2.5s;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+
+.extra4 {
+	width: 60px;
+	height: 15px;
+	background-color:aliceblue;
+	border: 1.5px solid darkslateblue;
+	transform: skewX(-45deg);
+	border-top-left-radius: 100%;
+	margin-left: 1960px;
+	margin-top: -.75em;
+	/*position: absolute;
+	top: 1400px;*/
+	animation-name: speedingbullet3;
+	animation-duration: 2.5s;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+
+@keyframes speedingbullet2 {
+	0% { margin-left: 1920px; }
+	100% { margin-left: -200px; }
+}
+
+@keyframes speedingbullet3 {
+	0% { margin-left: 1960px; }
+	100% { margin-left: -160px; }
+}
+
+.extra5 {
+	min-width: 50em;
+	height: 155em;
+	background-color:lightsteelblue;
+	opacity: 15%;
+	position: absolute;
+	top: 0em;
+	left: 25%;
+	z-index: -5;
+}
+
+
+@media (max-width:1400px){
+	
+	body {
+	margin-left: auto;
+	margin-right: auto;
+    max-width: 1366px;
+	height: 144em;
+	font-family: Didot, Cambria, serif; 
+	background-image: url("images/skyscraper.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-origin: border-box;
+	background-size: 110% 130%;
+	background-position: 0% 10%;
+
+}
+
+.extra5 {
+	min-width: 40em;
+	height: 144em;
+	background-color:lightsteelblue;
+	opacity: 15%;
+	position: absolute;
+	top: 0em;
+	left: 30%;
+	z-index: -5;
+}	
+	
+}
