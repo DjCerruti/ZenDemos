@@ -45,7 +45,7 @@ aside .design-selection {
 	background-color: #FFF3AF;
 	border-radius: 20%;
 	color: black;
-	padding: .5em;
+	padding: .25em .5em .25em .5em;
 	border: 8px solid blueviolet;
 }
 
